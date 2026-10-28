@@ -118,3 +118,80 @@ Filters
   border-radius: 12px;
   font-size: 20px;
 }
+
+#movies__section {
+  max-width: 1000px;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.movies {
+  max-width: 1000px;
+  width: 100%;
+  margin: 32px 0;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+}
+
+.movie {
+  max-width: 33%;
+  margin: 24px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  min-width: calc(800px / 3);
+}
+
+.movie-poster {
+  width: 100%;
+  display: block;
+}
+
+
+.movie__img {
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+.movie__title-wrapper {
+  display: block;
+  max-width: 100%;
+}
+
+.movie__loading {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 60px;
+  font-size: 60px;
+  color: #7342d6;
+}
+
+.movie__loading--spinner {
+  display: none !important;
+}
+
+.movie__loading .movie__loading--spinner {
+  display: block !important;
+}
+
+.FaSpinner {
+  animation: rotate 1s infinite linear;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}

@@ -86,3 +86,56 @@ a {
 .nav__btn:hover {
   background-color: #8686c1;
 }
+
+
+
+/* SMALL PHONES, TABLETS, LARGE SMARTPHONES */
+@media (max-width: 768px) {
+
+.nav__links {
+  max-width: 430px;
+  padding: 0 25px 0 35px;
+}
+
+
+.logo {
+  width: 75px;
+}
+
+.search__input {
+  height: 50px;
+  line-height: 30px;
+  padding: 0 10px;
+  font-size: 20px;
+}
+
+#filter {
+  margin: 10px;
+  padding: 8px 15px;
+  font-size: 16px;
+}
+
+.fa-magnifying-glass {
+  font-size: 26px;
+}
+
+}
+
+
+/* SMALL PHONES, LARGE SMARTPHONES */
+@media (max-width: 550px) {
+
+.logo {
+  width: 60px;
+}
+
+a {
+  font-size: 16px;
+}
+
+.navbar {
+  height: 126px;
+  margin-bottom: 30px;
+  
+}
+}

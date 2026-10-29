@@ -1,5 +1,5 @@
 * {
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', sans-serif;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", sans-serif;
   margin: 0;
   box-sizing: border-box;
 }
@@ -17,7 +17,7 @@ a {
 }
 
 .landing__page {
-margin: 0 auto;
+  margin: 0 auto;
 }
 
 .landing__wrapper {
@@ -32,7 +32,6 @@ margin: 0 auto;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-
 }
 
 .landing__title {
@@ -44,7 +43,7 @@ margin: 0 auto;
   align-items: center;
   text-align: center;
   margin-bottom: 24px;
-  color: #049BA2;
+  color: #049ba2;
 }
 
 .landing__sub-title {
@@ -58,19 +57,20 @@ margin: 0 auto;
   display: flex;
   max-width: 100%;
   border: none;
-  color: #049BA2;
 }
-.search__btn {
+
+button {
   margin-left: 20px;
   padding: 10px 60px;
   border: none;
-  background-color: #049BA2;
+  background-color: #049ba2;
   border-radius: 20px;
   box-shadow: 0 12px 20px 0 rgb(0, 0, 0, 0.2);
   transition: all 300ms ease;
 }
 
-.search__btn:hover {
+
+button:hover {
   background-color: #8686c1;
 }
 
@@ -87,32 +87,43 @@ margin: 0 auto;
   transform: scale(0.8);
 }
 
-
 .mag-icon {
   color: #fff;
   font-size: 36px;
 }
 
 .search__input {
-    background-color: #fff;
-    border-radius: 20px;
-    border: 1px solid #0a1f44;
-    color: #0a1f44;
-    display: inline-block;
-    height: 70px;
-    line-height: 40px;
-    outline: none;
-    padding: 0 15px;
-    max-width: 80%;
-    width: 100%;
-    font-size: 24px;
-    padding-left: 25px;
+  background-color: #fff;
+  border-radius: 20px;
+  border: 1px solid #0a1f44;
+  color: #0a1f44;
+  display: inline-block;
+  height: 70px;
+  line-height: 40px;
+  outline: none;
+  padding: 0 15px;
+  max-width: 80%;
+  width: 100%;
+  font-size: 24px;
+  padding-left: 25px;
 }
 /*
 Filters
   */
 
-#filter {
+.filter__wrapper {
+  margin: 10px;
+  padding: 10px 20px;
+}
+
+select {
+  margin: 10px;
+  padding: 10px 20px;
+  border-radius: 12px;
+  font-size: 20px;
+}
+
+option {
   margin: 10px;
   padding: 10px 20px;
   border-radius: 12px;
@@ -134,7 +145,6 @@ Filters
   align-items: center;
   flex-wrap: wrap;
   justify-content: space-around;
-
 }
 
 .movie {
@@ -146,23 +156,13 @@ Filters
   align-items: center;
   flex-wrap: wrap;
   min-width: calc(800px / 3);
-}
-
-.movie-poster {
-  width: 100%;
-  display: block;
+  cursor: pointer;
+  color: black;
 }
 
 
-.movie__img {
-  max-width: 100%;
-  margin-bottom: 20px;
-}
 
-.movie__title-wrapper {
-  display: block;
-  max-width: 100%;
-}
+
 
 .movie__loading {
   width: 100%;
@@ -182,7 +182,7 @@ Filters
   display: block !important;
 }
 
-.FaSpinner {
+.spinner {
   animation: rotate 1s infinite linear;
 }
 
@@ -193,5 +193,43 @@ Filters
 
   100% {
     transform: rotate(360deg);
+  }
+}
+
+/* SMALL PHONES, TABLETS, LARGE SMARTPHONES */
+@media (max-width: 768px) {
+  .landing__title {
+    font-size: 32px;
+    width: 500px;
+  }
+
+  .landing__sub-title {
+    font-size: 24px;
+    width: 500px;
+  }
+
+  .search__input {
+    height: 50px;
+    line-height: 30px;
+    padding: 0 10px;
+    font-size: 20px;
+  }
+
+  #filter {
+    margin: 10px;
+    padding: 8px 15px;
+    font-size: 16px;
+  }
+
+  .fa-magnifying-glass {
+    font-size: 26px;
+  }
+}
+
+/* SMALL PHONES, LARGE SMARTPHONES */
+@media (max-width: 550px) {
+  .landing__title {
+    font-size: 26px;
+    width: 450px;
   }
 }

@@ -6,8 +6,8 @@ const Footer = () => {
   return (
     <>
       <footer>
-        <img class='footer__logo' src={logo} alt='' />
-        <p class='copyright'>Copyright © Andy Jackson 2026</p>
+        <img className='footer__logo' src={logo} alt='' />
+        <p className='copyright'>Copyright © Andy Jackson 2026</p>
       </footer>
     </>
   );

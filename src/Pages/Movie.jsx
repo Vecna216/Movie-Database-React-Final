@@ -1,6 +1,6 @@
 import React from "react";
 import MovieDetails from "../Components/MovieDetails";
-import Navbar from "../Components/NavBar";
+import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
 import { useLocation } from "react-router-dom";
 
